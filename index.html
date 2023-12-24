@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Christopher Nolan en bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="p-2 bg-secondary text-white text-center">
+  <h1>Christopher Nolan</h1>
+  <p>Director y productor de cine</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#bio"> Biografía </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#movie"> Películas </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#opinion"> Opiniones </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#others"> Otros Directores </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h1 id="bio">Biografía</h1>
+      <div class="fakeimg">
+        <img src="./IMG/christopher-nolan-3097196.webp" class="img-fluid" alt="Portrait" >
+      </div>
+      <p class="">"Nolan asistiendo a los  premios Oscar, tras el éxito de su película Interstellar"</p>
+      <h3 class="mt-4">Enlaces externos:</h3>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link link" href="https://www.imdb.com/name/nm0634240/?ref_=nv_sr_srsg_1_tt_0_nm_7_q_christop" target="_blank"> IMDb </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link" href="https://www.filmaffinity.com/es/name-movies-type.php?name-id=415225280" target="_blank"> Filmaffinity </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link" href="https://www.rottentomatoes.com/celebrity/christopher_nolan" target="_blank"> Rotten Tomatoes </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link" href="https://www.justwatch.com/es/buscar?q=Christopher%20Nolan&person_id=1725"> Just Watch </a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8"><br><br>
+      <h4>Sobre él</h4>
+      <div> Es un destacado director, productor y escritor de cine británico. Nació el 30 de julio de 1970, en Londres,
+        Reino Unido. 
+        Nolan es conocido por su enfoque distintivo en la narrativa y su habilidad para fusionar tramas complejas con imágenes visualmente 
+        impactantes. 
+        A lo largo de su carrera, Nolan ha recibido numerosos elogios y premios por su contribución al cine, incluyendo múltiples nominaciones al 
+        Premio de la Academia. Su impacto en la industria cinematográfica lo ha consolidado como uno de los directores más influyentes y respetados 
+        de su generación. 
+        Sus pelúclas siempre exploran la moralidad humana, la construcción del tiempo y la naturaleza maleable de la memoria y la identidad personal. 
+        Su trabajo está impregnado de imágenes y conceptos de inspiración matemática, estructuras narrativas no convencionales, efectos especiales 
+        prácticos, paisajes sonoros experimentales, fotografía de películas de gran formato y perspectivas materialistas. Ha coescrito varias de sus 
+        películas con su hermano Jonathan Nolan y dirige la productora Syncopy Films con su esposa Emma Thomas.</div> <br>
+      <p>Aunque no ha conseguido ningún premio de academia todavía, si que ha conseguido estar nominando en los Oscars y en los Globos de Oro.
+        <div class="container mt-3">            
+            <table class="table table-striped table-sm">
+              <thead class="table-dark">
+                <tr>
+                  <th>Premios</th>
+                  <th>Nominación</th>
+                  <th>Película</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="5">Oscar</td>
+                  <td>Mejor Película</td>
+                  <td rowspan="2">Dunkerque</td>
+                </tr>
+                <tr>
+                  <td>Mejor Director</td>
+                </tr>
+                <tr>
+                  <td>Mejor Película</td>
+                  <td rowspan="2">Inception</td>
+                </tr>
+                <tr>
+                  <td>Mejor Guión Original</td>
+                </tr>
+                <tr>
+                  <td>Mejor Guón Original</td>
+                  <td>Memento</td>
+                </tr>
+                <tr>
+                  <td rowspan="5">Globos de Oro</td>
+                  <td>Mejor director</td>
+                  <td>Dunkerque</td>
+                </tr>
+                <tr>
+                  <td>Mejor Director</td>
+                  <td rowspan="2">Inception</td>
+                </tr>
+                <tr>
+                  <td>Mejor Guión</td>
+                </tr>
+                <tr>
+                  <td>Mejor Guión</td>
+                  <td>Memento</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </p>
+    </div>
+  </div>
+</div> <br><br>
+<div class="container mt-8"> 
+  <h1 class="mt-7" id="movie">Películas</h1>
+  <p>
+    Entre sus obras podemos encontrar "Memento" (2000), "The Dark Knight" (2008), "Inception" (2010), "Dunkirk" (2017), "Tenet" y, el reciente 
+    mega-éxito, "Oppenheimer" (2023).
+  </p> 
+  <div id="pelis" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#pelis" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#pelis" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#pelis" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#pelis" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#pelis" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#pelis" data-bs-slide-to="5"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./IMG/dunkirk.jpg" alt="dunkirk" class="d-block mx-auto" height="580px">
+        <div class="carousel-caption">
+          <h3>Dunkerque</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./IMG/origen.jpg" alt="origen" class="d-block mx-auto" height="580px">
+        <div class="carousel-caption">
+          <h3>Origen</h3>
+        </div> 
+      </div>
+      <div class="carousel-item">
+        <img src="./IMG/the_dark_knight.jpg" alt="el_caballero_oscuro" class="d-block mx-auto" height="580px">
+        <div class="carousel-caption">
+          <h3>El caballero oscuro</h3>
+        </div>  
+      </div>
+      <div class="carousel-item">
+        <img src="./IMG/memento.jpg" alt="memento" class="d-block mx-auto" height="580px">
+        <div class="carousel-caption">
+          <h3>Memento</h3>
+        </div> 
+      </div>
+      <div class="carousel-item">
+        <img src="./IMG/tenet.jpg" alt="tenet" class="d-block mx-auto" height="580px">
+        <div class="carousel-caption">
+          <h3>Tenet</h3>
+        </div> 
+      </div>
+      <div class="carousel-item">
+        <img src="./IMG/oppenheimer.jpg" alt="oppenheimer" class="d-block mx-auto" height="580px">
+        <div class="carousel-caption">
+          <h3>Oppenheimer</h3>
+        </div> 
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#pelis" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#pelis" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div> <br>
+  <div class="row">
+    <div class="col-sm">
+      <iframe width="380" height="214" src="https://www.youtube.com/embed/9UfIRXjoO3I?si=u4IbOF_qygOtUE8T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="col-sm">
+      <iframe width="380" height="214" src="https://www.youtube.com/embed/mV9l1enMqvk?si=6PnF5SvEP62k-oTT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="col-sm">
+      <iframe width="380" height="214" src="https://www.youtube.com/embed/DsRcqwGOmUU?si=U1Tseak8QETLHR5n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div> <br><br>
+</div>
+<div class="container mt-8"> 
+  <h1 id="opinion">Opiniones </h1><br>
+  <div class="row">
+    <div class="col-sm opinion-borde"> 
+      <img src="./IMG/c1.webp" class="rounded-circle" alt="profile" width="80" height="80"> 
+      <p class="opinion-texto"> "La película de Christopher Nolan que más me ha impactado es 'Inception'. La manera en que Nolan te sumerge en un mundo de sueños dentro de sueños es simplemente fascinante. La trama compleja, junto con escenas de acción visualmente deslumbrantes y un brillante elenco, crea una experiencia cinematográfica única. Nolan logra desafiar las expectativas del público mientras explora conceptos filosóficos sobre la realidad y la percepción. 'Inception' no solo es un espectáculo visual impresionante, sino también una obra maestra de la narrativa y la dirección que invita a la reflexión mucho después de haber terminado."</p>
+    </div>
+    <div class="col-sm opinion-borde">
+      <img src="./IMG/c1.webp" class="rounded-circle" alt="profile" width="80" height="80"> 
+      <p class="opinion-texto"> "Christopher Nolan es ampliamente reconocido por su maestría en la narrativa cinematográfica y su habilidad para combinar tramas complejas con imágenes visualmente impactantes. Su enfoque único en la exploración de conceptos como la realidad y la percepción del tiempo ha dejado una huella duradera en el cine contemporáneo. Nolan se destaca por películas como "Inception", "Interstellar" y su trilogía de Batman, donde demuestra una mezcla única de creatividad, inteligencia y habilidades técnicas. Su capacidad para cautivar al público y desafiar las convenciones narrativas lo consagra como uno de los directores más influyentes de su generación."</p>
+    </div>
+    <div class="col-sm opinion-borde">
+      <img src="./IMG/c1.webp" class="rounded-circle" alt="profile" width="80" height="80"> 
+      <p class="opinion-texto">"Christopher Nolan, el visionario director británico, ha dejado una marca imborrable en la industria cinematográfica con su enfoque audaz y distintivo. Conocido por sus narrativas intrincadas y visuales asombrosos, Nolan ha llevado al público a viajes cinematográficos inolvidables. Desde el laberíntico "Inception" hasta la epopeya espacial de "Interstellar", cada obra es una exploración única de conceptos complejos, tejida con maestría cinematográfica. Su trilogía de Batman redefinió el género de superhéroes, mientras que "Dunkirk" exhibió su destreza en la dirección técnica. Con una habilidad única para desafiar al espectador y expandir los límites del cine, Christopher Nolan continúa siendo un pionero del arte cinematográfico contemporáneo."</p>
+    </div>
+    <div class="col-sm opinion-borde">
+      <img src="./IMG/c1.webp" class="rounded-circle" alt="profile" width="80" height="80"> 
+      <p class="opinion-texto">¡La última película de Christopher Nolan me dejó completamente asombrado! Su habilidad para tejer historias complejas mientras mantiene una narrativa cautivadora es simplemente increíble. La forma en que juega con el tiempo y la realidad en cada escena es única y emocionante. Además, la cinematografía y la banda sonora siempre están en otro nivel. Nolan tiene esta manera de desafiar nuestras mentes y sumergirnos en mundos extraordinarios. Cada película suya es una experiencia cinematográfica que deja una profunda impresión. ¡Definitivamente, soy un fanático de su genialidad!</p>
+    </div>
+  </div>
+</div> <br><br>
+<div class="container mt-5">
+  <h1 id="others"> Otros directores </h1>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="container mt-3 p-5 bg-secondary text-white rounded derecha">
+        <img src="./IMG/almodovar.jpeg" alt="almodovar" width="150px" class="float-start">
+        <h2>Pedro Almodóvar</h2> 
+        <p>Pedro Almodóvar, nacido el 25 de septiembre de 1949 en Calzada de Calatrava, España, 
+          es un influyente director y guionista de cine. Su carrera despegó en la década de 1980 
+          con películas como "Laberinto de pasiones" y "Mujeres al borde de un ataque de nervios", 
+          destacándose por su estilo visual audaz y temáticas provocativas. Almodóvar es conocido 
+          por explorar la identidad, la sexualidad y la cultura española. Ganador de numerosos premios, 
+          incluyendo dos premios de la Academia. Su filmografía incluye obras maestras como "Todo sobre mi madre", 
+          "Hable con ella" y "La piel que habito". Su contribución ha dejado una marca distintiva 
+          en el cine internacional.
+        </p> 
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="container mt-3 p-5 bg-secondary text-white rounded derecha">
+        <img src="./IMG/coppola.jpg" alt="coppola" width="150px" class="float-start">
+        <h2>Francis Ford Coppola</h2> 
+        <p>Francis Ford Coppola, nacido el 7 de abril de 1939, es un director, productor y guionista 
+          estadounidense de renombre. Alcanzó fama mundial con "El Padrino" (1972) y su secuela, 
+          "El Padrino: Parte II" (1974), ambas aclamadas y premiadas. Coppola también dirigió 
+          "Apocalypse Now" (1979), una épica de guerra influyente. Su carrera incluye éxitos y desafíos, 
+          explorando diversos géneros cinematográficos. A lo largo de los años, ha recibido múltiples premios, 
+          incluyendo cinco premios de la Academia. Además del cine, ha tenido una carrera emprendedora en 
+          la industria del vino, siendo un cineasta de gran impacto y versatilidad.
+        </p> 
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="container mt-3 p-5 bg-secondary text-white rounded derecha">
+        <img src="./IMG/tarantino.jpg" alt="tarantino" width="150px" class="float-start">
+        <h2>Quentin tarantino</h2> 
+        <p>Quentin Tarantino, nacido el 27 de marzo de 1963 en Knoxville, Tennessee, es un influyente 
+          director, guionista y productor de cine estadounidense. Comenzó su carrera en la década de 1990 
+          con películas como "Reservoir Dogs" (1992) y "Pulp Fiction" (1994), que le valieron reconocimiento mundial 
+          y la Palma de Oro en Cannes. Tarantino es conocido por su estilo único, diálogos intensos y narrativas 
+          no lineales. A lo largo de su carrera, ha dirigido éxitos como "Kill Bill" (2003-2004), 
+          "Inglourious Basterds" (2009) y "Django Unchained" (2012), ganando múltiples premios, incluidos dos 
+          Premios de la Academia. Su enfoque distintivo en el cine lo ha consolidado como una figura influyente 
+          en la industria.
+        </p> 
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="container mt-3 p-5 bg-secondary text-white rounded derecha" >
+        <img src="./IMG/director-scorsese.jpeg" alt="scorsese" width="150px" class="float-start">
+        <h2>Martin Scorsese</h2> 
+        <p>Martin Scorsese, nacido el 17 de noviembre de 1942 en Nueva York, es un director, guionista y productor 
+          estadounidense. Su carrera abarca más de cinco décadas y ha dejado una marca indeleble en el cine. Reconocido 
+          por su estilo visual distintivo y su enfoque en temas como la violencia, la religión y la identidad urbana, 
+          Scorsese ha dirigido clásicos como "Taxi Driver" (1976), "Goodfellas" (1990) y "The Departed" (2006), que ganó 
+          el Oscar a la Mejor Película. Además, ha colaborado extensamente con Robert De Niro y Leonardo DiCaprio. Scorsese 
+          es un cineasta aclamado, influyente y apasionado, destacando por su contribución significativa al cine contemporáneo.
+        </p> 
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<footer class="bg-secondary text-center text-lg-start">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Redes Sociales</h5>
+        <img src="./IMG/twitter-icon.webp" alt="twitter" width="30px">
+        <img src="./IMG/instagram-icon2.png" alt="instagram" width="30px">
+        <img src="./IMG/youtube-icon.webp" alt="youtube" width="30px">
+      </div>
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Subscribete para próximos proyectos</h5>
+        <label for="email" class="form-label"></label>
+        <input type="email" class="form-control" id="email" placeholder="Introduce tu e-mail aquí" name="email">
+        <button type="submit" class="btn btn-dark">Vamos allá</button>
+      </div>
+    </div>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 Copyright
+  </div>
+</footer>
+
+
+</body>
+</html>

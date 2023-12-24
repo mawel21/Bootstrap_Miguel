@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(235, 228, 218);
+}
+.link{
+    background-color: rgb(218, 207, 207);
+    border: 1px solid rgb(117, 74, 0);
+    color: hsl(0, 0%, 0%);
+    margin-top: 4px;
+}
+.fakeimg {
+    height: 233px;
+    border: 2px solid #2f2f2f;
+}
+.carrousel-inner{
+    height: 231px;
+}
+.opinion-texto {
+    padding: 10px;
+    color: #6e6813; 
+    display: inline-block; 
+}
+.opinion-borde{
+    border: 2px solid #2b2b2b; 
+    border-radius: 15px;
+    background-color: #e2e4c3; 
+    margin-right: 18px;
+    padding-top: 6px;
+}
+.derecha{
+    margin-right: 8px;
+    text-align: right;
+    font-size: 15px;
+}
+.footer-estilo{
+
+}
